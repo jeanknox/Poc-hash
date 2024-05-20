@@ -15,3 +15,5 @@ class HashFile(Base):
 
 
 DATABASE_URL = "sqlite://:memory:"
+engine = create_engine(DATABASE_URL)
+connection = engine.connect
